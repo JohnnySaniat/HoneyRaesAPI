@@ -32,3 +32,6 @@ The code uses ASP.NET Core to create a simple web application. The application e
 - `/servicetickets/{id}`: Delete a service ticket by ID.
 - `/servicetickets/{id}`: Update a service ticket by ID.
 - `/servicetickets/{id}/complete`: Mark a service ticket as completed.
+
+## Postman
+

@@ -1,0 +1,389 @@
+{
+  "info": {
+    "_postman_id": "fdc88a01-5e1d-4d42-a5a8-cab38f7f7ee5",
+    "name": "HoneyRaesAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28011587",
+    "_collection_link": "https://interstellar-astronaut-872969.postman.co/workspace/CalzonedIn~1a3841f2-4433-41d5-8b68-1d7042288eac/collection/28011587-fdc88a01-5e1d-4d42-a5a8-cab38f7f7ee5?action=share&source=collection_link&creator=28011587"
+  },
+  "item": [
+    {
+      "name": "GetServiceTickets",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/servicetickets",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "servicetickets"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PostServiceTicket",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"customerId\": 1,\r\n    \"description\": \"Garage door won't open\",\r\n    \"emergency\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5116/servicetickets",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "servicetickets"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PostServiceTicketComplete",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"customerId\": 1,\r\n    \"description\": \"Garage door won't open\",\r\n    \"emergency\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5116/servicetickets/5/complete",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "servicetickets",
+            "5",
+            "complete"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteServiceTicket",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/servicetickets/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "servicetickets",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetServiceTicketById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/servicetickets/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "servicetickets",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PutServiceTicketById",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"employeeId\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5116/servicetickets/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "servicetickets",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetEmployees",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "employees"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetEmployeeById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/employees/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "employees",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetCustomers",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/customers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "customers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetCustomerById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/customers/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "customers",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetEmergencies",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/emergencies",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "emergencies"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetUnassigned",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/unassigned",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "unassigned"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetInactiveCustomers",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/inactivecustomers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "inactivecustomers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetAvailableEmployees",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/availableemployees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "availableemployees"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetEmployeesCustomers",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/employees/2/customers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "employees",
+            "2",
+            "customers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetEmployeeOfTheMonth",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/employeeofthemonth",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "employeeofthemonth"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetPastTicketReview",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/pastticketreview",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "pastticketreview"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetPrioritizedTickets",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5116/prioritizedtickets",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5116",
+          "path": [
+            "prioritizedtickets"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
