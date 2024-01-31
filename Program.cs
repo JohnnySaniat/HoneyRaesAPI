@@ -369,5 +369,20 @@ app.MapGet("/api/prioritizedtickets", () =>
     return Results.Ok(prioritizedTickets);
 });
 
+app.MapPatch("/api/servicetickets/{id}/assign", (int id, AssignEmployeeRequest request) =>
+{
+    var ticket = serviceTickets.FirstOrDefault(st => st.Id == id);
+
+    if (ticket == null)
+    {
+        return Results.NotFound($"Service ticket with ID {id} not found.");
+    }
+
+    // Assign the employee to the service ticket
+    ticket.EmployeeId = request.EmployeeId;
+
+    return Results.Ok($"Employee {request.EmployeeId} assigned to service ticket {id} successfully.");
+});
+
 app.Run();
 
